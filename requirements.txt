@@ -1,0 +1,4 @@
+# Only needed for LIVE runs. Mock mode / --selftest run on the Python stdlib alone.
+#   pip install -r requirements.txt
+openai>=1.30         # OpenRouter calls (OpenAI-compatible client)
+# Tavily search uses stdlib urllib; .env is parsed by the stdlib — no other deps needed.

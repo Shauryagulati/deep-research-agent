@@ -1,0 +1,54 @@
+# ============================================================================
+# Code-only repository. Anything not source code stays out — secrets, working
+# notes, plans, eval outputs, caches. Patterns are generic on purpose.
+# ============================================================================
+
+# --- secrets / credentials (NEVER commit) ---
+.env
+.env.*
+!.env.example
+
+# --- python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.mypy_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- working artifacts: docs, notes, plans, specs (kept out entirely) ---
+*.md
+!README.md
+docs/
+notes/
+scratch/
+spec/
+specs/
+design/
+*.draft
+*.tmp
+
+# --- eval outputs, report dumps, submissions, data caches ---
+out/
+output/
+results/
+runs/
+*.jsonl
+*.log
+.cache/
+reference-data/
+
+# --- os / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
